@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tech & Lifestyle</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+        }
+
+        nav button {
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background: #f39c12;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .article h2 {
+            margin-bottom: 10px;
+        }
+
+        .article p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .adsense {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        @media(max-width: 600px) {
+            nav button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blog Tech & Lifestyle</h1>
+        <p>Des astuces, news et tendances tech et lifestyle</p>
+    </header>
+
+    <nav>
+        <button onclick="afficherPage('accueil')">Accueil</button>
+        <button onclick="afficherPage('articles')">Articles</button>
+        <button onclick="afficherPage('apropos')">À propos</button>
+        <button onclick="afficherPage('contact')">Contact</button>
+    </nav>
+
+    <div class="container">
+        <!-- Accueil -->
+        <div id="accueil" class="page">
+            <div class="article">
+                <h2>Bienvenue sur Blog Tech & Lifestyle</h2>
+                <p>Découvrez des articles sur les dernières tendances technologiques, les astuces du quotidien et des conseils lifestyle pour améliorer votre vie numérique et personnelle. Chaque article est pensé pour vous apporter du contenu utile et intéressant, prêt à accueillir des publicités Google AdSense.</p>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div id="articles" class="page" style="display:none;">
+
+            <div class="article">
+                <h2>Les smartphones les plus attendus de 2026</h2>
+                <p>2026 s’annonce comme une année révolutionnaire pour le monde des smartphones. Les marques les plus populaires prévoient des innovations majeures en matière de design, performance et intelligence artificielle. Les appareils haut de gamme intégreront des caméras ultra-haute résolution capables de filmer en 16K, des batteries à charge ultra-rapide et des écrans pliables plus résistants que jamais.</p>
+                <p>Pour les utilisateurs, cela signifie une expérience multimédia encore plus immersive et fluide. Les applications seront optimisées pour l’intelligence artificielle afin de proposer des recommandations personnalisées, de gérer vos tâches quotidiennes et même d’améliorer votre sécurité numérique.</p>
+                <div class="adsense">
+                    <!-- Remplace avec ton code AdSense -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXX"
+                         data-ad-slot="XXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <p>En résumé, investir dans un smartphone en 2026 sera plus qu’un choix technologique : ce sera une manière de rester connecté au futur dès aujourd’hui.</p>
+            </div>
+
+            <div class="article">
+                <h2>5 astuces pour améliorer votre productivité au quotidien</h2>
+                <p>La productivité est un défi constant, surtout dans un monde numérique qui ne dort jamais. Voici cinq astuces simples mais efficaces pour maximiser votre efficacité au travail et dans la vie personnelle. Premièrement, organisez vos tâches avec une liste prioritaire. Utilisez des applications comme Todoist ou Notion pour ne jamais perdre le fil de vos objectifs.</p>
+                <p>Deuxièmement, fixez des plages horaires pour vérifier vos emails et notifications afin de réduire les distractions. Troisièmement, adoptez la méthode Pomodoro : travaillez 25 minutes, puis prenez 5 minutes de pause. Quatrièmement, déconnectez-vous régulièrement des réseaux sociaux pour recentrer votre attention sur vos objectifs réels. Enfin, investissez dans un environnement de travail ergonomique pour réduire la fatigue physique et mentale.</p>
+                <div class="adsense">
+                    <!-- Remplace avec ton code AdSense -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXX"
+                         data-ad-slot="XXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <p>Avec ces cinq astuces, vous remarquerez rapidement une amélioration de votre productivité et de votre bien-être général.</p>
+            </div>
+
+            <div class="article">
+                <h2>Les tendances lifestyle à suivre cette année</h2>
+                <p>Le lifestyle ne se limite plus à la mode ou aux loisirs. Aujourd’hui, il englobe la santé, le bien-être, la technologie et même l’alimentation. Cette année, certaines tendances s’imposent comme incontournables. Les applications de suivi de sommeil et de méditation connaissent un succès croissant, permettant aux utilisateurs de mieux gérer leur stress et leur énergie.</p>
+                <p>Le minimalisme digital est également en hausse : réduire le nombre d’applications et d’appareils inutiles pour simplifier sa vie et gagner du temps. Côté alimentation, les régimes basés sur les plantes et la durabilité continuent de séduire un public de plus en plus conscient de l’impact environnemental de ses choix.</p>
+                <div class="adsense">
+                    <!-- Remplace avec ton code AdSense -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXX"
+                         data-ad-slot="XXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <p>En intégrant ces tendances dans votre quotidien, vous combinez bien-être, modernité et efficacité, tout en restant au top des nouveautés lifestyle.</p>
+            </div>
+
+        </div>
+
+        <!-- À propos -->
+        <div id="apropos" class="page" style="display:none;">
+            <div class="article">
+                <h2>À propos de ce blog</h2>
+                <p>Blog Tech & Lifestyle a été créé pour partager des conseils, astuces et actualités dans le domaine de la technologie et du style de vie. L’objectif est de fournir des contenus pertinents pour nos lecteurs et de créer un espace idéal pour accueillir des publicités Google AdSense.</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="page" style="display:none;">
+            <div class="article">
+                <h2>Contact</h2>
+                <p>Pour toute question ou suggestion, envoyez un email à : bakaiwekikmo@gmail.com </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Blog Tech & Lifestyle. Tous droits réservés.
+    </footer>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script>
+        function afficherPage(page) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(p => p.style.display = 'none');
+            document.getElementById(page).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
